@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untranslatable</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        iframe {
+            margin-top: 10vh;
+            height: 60vh; /* Set height to 60% of viewport height */
+            width: calc(60vh * 16 / 9); /* Adjust width to maintain 16:9 ratio */
+            position: relative;
+            border: none;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            pointer-events: none;
+        }
+
+        .description {
+            margin-top: 20px;
+            max-width: 60%;
+            font-size: 1em;
+            line-height: 1.5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-text">Untranslatable</div>
+    <iframe src="https://www.youtube.com/embed/4eNA6F-8XNc" allowfullscreen></iframe>
+    <div class="description">
+        우리는 세상의 많은 현상을 데이터로 변환하여 이해하고 서로 소통한다.<br>그러나 너무나 복잡한 데이터는 오히려 세상을 더욱 이해할 수 없도록 만들기도 한다.<br>결국 실제를 옮겨 담은 하나의 껍데기에 불과하기 때문에 아무리 정교하게 다듬어도 본질과 멀어져가는지도 모른다.<br>데이터로 변환하지 않고 직감적으로 바로 느낄 수 있는 순간을 떠올려본다.
+    </div>
+</body>
+</html>
+
